@@ -23,8 +23,8 @@ console.log('Gingerbread + button was clicked!')
 // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
 gb= gb+1
 total = gb+cc+sugar
-document.getElementById("qty-gb") == gb
-document.getElementById("qty-total") == total
+document.getElementById("qty-gb").textContent = gb
+document.getElementById("qty-total").textContent = total
 console.log ('gb:' + gb)
 console.log ('total:' + total)
 })
@@ -36,8 +36,8 @@ gbMinusBtn.addEventListener('click', function() {
         gb=gb-1
     }
 total = gb+cc+sugar
-document.getElementById("qty-gb") == gb
-document.getElementById("qty-total") == total
+document.getElementById("qty-gb").textContent = gb
+document.getElementById("qty-total").textContent = total
 console.log ('gb:' + gb)
 console.log ('total:' + total)
 })
@@ -46,8 +46,8 @@ ccPlusBtn.addEventListener('click', function(){
     console.log ('cc plus button clicked')
     cc = cc+1
     total = cc+gb+sugar
-    document.getElementById("qty-cc") == cc
-    document.getElementById("qty-total") == total
+    document.getElementById("qty-cc").textContent = cc
+    document.getElementById("qty-total").textContent = total
     console.log('cc:' + cc)
     console.log ('total:' + total)
 })
@@ -58,8 +58,8 @@ if (cc>0) {
     cc=cc-1
 }
 total = cc+gb+sugar
-document.getElementById("qty-cc") == cc
-    document.getElementById("qty-total") == total
+document.getElementById("qty-cc").textContent = cc
+    document.getElementById("qty-total").textContent = total
     console.log('cc:' + cc)
     console.log ('total:' + total)
 })
@@ -68,8 +68,8 @@ sugarPlusBtn.addEventListener('click', function(){
     console.log('sugar plus btn')
     sugar = sugar+1
     total = cc+gb+sugar
-    document.getElementById("qty-sugar") == sugar
-    document.getElementById("qty-total") == total
+    document.getElementById("qty-sugar").textContent = sugar
+    document.getElementById("qty-total").textContent = total
     console.log('sugar:' + sugar)
     console.log ('total:' + total)
 })
@@ -80,8 +80,8 @@ sugarMinusBtn.addEventListener('click', function(){
         sugar=sugar-1
     }
     total = cc+gb+sugar
-    document.getElementById("qty-sugar") == sugar
-        document.getElementById("qty-total") == total
+    document.getElementById("qty-sugar").textContent = sugar
+        document.getElementById("qty-total").textContent = total
         console.log('sugar:' + sugar)
         console.log ('total:' + total)
 })
